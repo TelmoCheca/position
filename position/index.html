@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="position fixed">        
+        <h2 class="title">Position fixed</h2>
+        <Il>Position fixed: il ellemento si posiziona in relezione al viewpor e non a un contenitore. Il ellemento viene rimosso dal flussodel documento e serve il z-index specifica l'ordine di stack in relezione a gli altri ellementi</p>
+    </div>
+
+    <!-- position static -->
+    <div class="container">
+        <h2 class="title">Position static "default"</h2>
+        <p>Position static non puo essere posizionato</p>
+        <div class="position">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+        </div>
+        <p>Nesun ellemento è posizionato </p>
+    </div>
+
+    <!-- position relavtive -->
+    <div class="container">
+        <h2 class="title">Position relative</h2>
+        <p>Position relative puo essere posizionato mantenendo lo spazio nel flusso del documento</p>
+        <div class="position relative">
+            <div class="box relative1">1</div>
+            <div class="box relative2">2</div>
+            <div class="box relative3">3</div>
+            <div class="box relative4">4</div>
+        </div>
+        <p>Gli ellemnti si posizionano e lo spasio rimane riservato nel flusso del documento</p>
+    </div>
+
+    <!-- position absolute -->
+    <div class="container">
+        <h2 class="title">Position absolute</h2>
+        <p>Position absolute: gli ellemnti vengono rimossi dal flusso del documento e gli altri ellementi possono occupare lo sopzio liverato, ha bisogno che il ellemneto padre abbia position diverso da static</p>
+        <div class="position absolute">
+            <div class="box absolute1">1</div>
+            <div class="box absolute2">2</div>
+            <div class="box absolute3">3</div>
+            <div class="box absolute4">4</div>
+        </div>
+        <p>Se il ellemnto padre non ha position diverso da statis il ellemento si posiziona in relazione al antenato che abbia il position diverso da static o in relazione al html</p>
+    </div>
+
+    <!-- position absolute -->
+    <div class="container">
+        <h2 class="title">Position sticky</h2>
+        <p>
+            Position sticky: alterna tra relative e fixed, a seconda della posizione di scorrimento.
+        </p>    
+            <div class="position sticky">
+            </p>
+            <div class="box sticky1">1</div>
+            <div class="box sticky2">2</div>
+            <div class="box sticky3">3</div>
+            <div class="box sticky4">4</div>
+            <div class="box sticky5">5</div>
+            <div class="box sticky6">6</div>
+        </div>
+        <p>
+            È posizionato come fixed finché non finisce il suo contenuto e quindi "si attacca" dalla position fixed e diventa relative e sigue lo sorrimento dello scroll.
+        </p>
+    </div>
+   
+</body>
+</html>

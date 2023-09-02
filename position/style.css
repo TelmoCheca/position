@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 20px;
+    background-color: #f4ec95;
+    color: #ffffff;
+    display: flex;
+    padding-top: 150px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* style comuni */
+.container{
+    width: 40vw;
+    margin: 30px;
+    padding: 20px;
+    border: 2px solid black;
+    display: inline-block;
+    background-color: #898985;
+}
+
+.title, p{
+    margin: 10px;
+}
+
+.box{
+    width: 75px;
+    height: 75px;
+    padding: 25px;
+    margin: 5px;
+    background: linear-gradient(360deg, #38ff02 , #88167a, #0b0b0a );
+    text-align: center;
+    border: 2px solid black;
+}
+
+
+/* position fixed si posiziona sempre con relazione al viewport e non al contenitore*/
+ 
+.position.fixed{
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+    position: fixed;
+    margin-top: 15px;
+    text-align: center;
+    background-color: #4a39e9;
+    z-index: 1;
+    top: 0;
+} 
+
+.fixed p{
+    font-size: 16px;
+}
+
+/* position relative */
+.position{
+    width: 100%;
+    background-color: #9d9d;
+    border: 2px solid black;
+}
+
+.relative1{
+    position: relative;
+    left: 200px;
+}
+/* 
+l.relative2{
+    position: relative;
+    bottom: 30px;
+} */
+
+.relative3{
+    position: relative;
+    left: 250px;
+    top: 25px;
+}
+.relative4{
+    position: relative;
+    bottom: 15px;
+}
+
+/* position absolute */
+
+.absolute{
+    position: relative;
+}
+.absolute  .box.absolute1 {
+    background: linear-gradient(-45deg, #f13737, #404009, #dfea06);
+    position: absolute;
+    left: 25px;
+    top: 15px;
+    right: 0;
+}
+.absolute  .box.absolute3 {
+    background: linear-gradient(45deg, #f13737, #5c5c1c, #dfea06);
+    position: absolute;
+    left: 150px;
+    bottom: 45px;
+}
+
+/* position sticky */
+
+.position.sticky{
+    height: 400px;
+    overflow: auto;
+}
+
+.sticky > .box{
+    position: sticky;
+    top: 10px;
+    width: 90%;
+    height: 200px;
+    margin: 10px auto;
+
+}
